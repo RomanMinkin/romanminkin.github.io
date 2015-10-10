@@ -1,19 +1,21 @@
 ---
-layout: page
-title: About Pixyll
+layout: about
+title: About
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+<br>
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+<div class="avatar-container">
+  <img src="/images/me.png" alt="Roman Minkin" class="avatar">
+</div>
 
-Thanks to the following:
+I'm a Software Development Teams Lead and Enthusiast, who is passionate about all kind of technologies.
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Type Scale](http://type-scale.com/)
+I supose to launch rockets 🚀 into the space, but found my passion in web technilogies and now helping startups to launch their products.
+
+I help building anything from simple prototypes to full scale production ready stacks based on your needs and avalible resources, to get your product out fast 📲.
+
+* [Twitter](https://twitter.com/RomanMinkin)
+* [LinkedIn](https://www.linkedin.com/in/romanminkin)
+* [GitHub](https://github.com/RomanMinkin)

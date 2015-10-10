@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign sorted_tags = page.tags | sort %}
+
 {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}
 {% assign minutes = 1 %}
@@ -32,6 +34,14 @@ layout: default
 
 {% if site.show_post_footers %}
   {% include post_footer.html %}
+{% endif %}
+
+{% if sorted_tags != empty %}
+<small>
+    {% for tag in sorted_tags %}
+      <a href="{{ site.baseurl }}/tags/#{{tag}}" class="button-gray rounded">{{tag}}</a>
+    {% endfor %}
+</small>
 {% endif %}
 
 {% if site.disqus_shortname %}

@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Roman Minkin
+email:       minkinroman@gmail.com
+author:      Roman Minkin
+description: "Roman Minkin's personal website and blog."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://www.minkin.me"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -13,22 +13,22 @@ google_verification:
 
 # Optional features
 animated:             false
-show_related_posts:   false
+show_related_posts:   true
 show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: minkin
 
 # Social icons
-github_username:
+github_username: RomanMinkin
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username: RomanMinkin
 google_plus_id:
-linkedin_username:
+linkedin_username: romanminkin
 angellist_username:
 medium_id:
 bitcoin_url:
@@ -36,18 +36,18 @@ paypal_url:
 flattr_button:
 
 # Post sharing icons
-show_sharing_icons: false
-share_text: 'Share this post!'
+show_sharing_icons: true
+share_text: ''
 # Change to 'true' to enable individual icons
 share_facebook: false
-share_twitter: false
-share_googleplus: false
+share_twitter: true
+share_googleplus: true
 share_linkedin: false
 share_digg: false
 share_tumblr: false
-share_reddit: false
+share_reddit: true
 share_stumbleupon: false
-share_hackernews: false
+share_hackernews: true
 
 # Build settings
 markdown:     kramdown
@@ -57,3 +57,5 @@ permalink:    pretty
 paginate:     4
 sass:
   compressed: true
+gems:
+  - jekyll-sitemap

@@ -26,4 +26,16 @@ footer {
   font-weight: $footer-font-weight;
   padding: $footer-padding;
   text-align: center;
+
+  ul {
+    margin: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      line-height: 16px;
+    }
+    li+li {
+      margin-left: 10px;
+    }
+  }
 }
