@@ -8,7 +8,7 @@ url:         "http://www.minkin.me"
 date_format: "%b %-d, %Y"
 
 # Google services
-google_analytics:
+google_analytics: UA-68684004-1
 google_verification:
 
 # Optional features
