@@ -7,17 +7,15 @@ categories: blog
 tags:       jquery, meetup.com
 ---
 
-After each meetup many of you receive email with the subject <b>Stay in touch!</b>&nbsp;and a link to <a href="http://meetup.com/">meetup.com</a> with simple questionnaire page <b>How was the Meetup?&nbsp;</b><br />
-<b><br /></b>
+After each meetup many of you receive email with the subject **Stay in touch!** and a link to [Meetup.com](http://meetup.com) with simple questionnaire page **How was the Meetup?**
+
 To keep networking level high I prefer to <b>Say hello </b>to everybody, but i'm too lazy to do it manually otherwise I would not be a developer, so here is a solution!<br />
-<br />
-<a href="http://meetup.com/">Meetup.com</a> as many sites uses <a href="http://jquery.com/">jQuery</a> library, which means that we can open <a href="https://developers.google.com/chrome-developer-tools/docs/console">Developer Console</a> in our browser and run simple JavaScript command which will do all the magic for us:<br />
-<ol style="text-align: left;">
-</ol>
-<ol style="text-align: left;">
-<li>Go to&nbsp;<a href="http://meetup.com/">Meetup.com</a>&nbsp;page with questionnaire form</li>
-<li>Open&nbsp;<a href="https://developers.google.com/chrome-developer-tools/docs/console">Developer Console</a>&nbsp;in Crome, FireFox, Safari, etc</li>
-<li>Run following code:</li>
+
+[Meetup.com](http://meetup.com) as many sites uses [jQuery](http://jquery.com/) library, which means that we can open <a href="https://developers.google.com/chrome-developer-tools/docs/console">Developer Console</a> in our browser and run simple JavaScript command which will do all the magic for us:
+
+1. Go to [Meetup.com](http://meetup.com) page with questionnaire form
+2. Open <a href="https://developers.google.com/chrome-developer-tools/docs/console">Developer Console</a>&nbsp;in Crome, FireFox, Safari, etc
+3. Run following code:
 </ol>
 <ol style="text-align: left;">
 </ol>
