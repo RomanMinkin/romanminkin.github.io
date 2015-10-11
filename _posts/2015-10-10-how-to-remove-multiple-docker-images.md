@@ -3,6 +3,7 @@ layout:     post
 title:      How to remove multiple Docker images
 date:       2015-10-10 20:18:00
 summary:    A simple shell command will help you to remove multiple docker images.
+image:      /images/docker2.png
 categories: blog
 tags:       docker
 ---
