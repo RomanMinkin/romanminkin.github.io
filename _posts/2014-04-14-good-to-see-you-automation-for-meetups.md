@@ -16,9 +16,6 @@ To keep networking level high I prefer to <b>Say hello </b>to everybody, but i'm
 1. Go to [Meetup.com](http://meetup.com) page with questionnaire form
 2. Open <a href="https://developers.google.com/chrome-developer-tools/docs/console">Developer Console</a>&nbsp;in Crome, FireFox, Safari, etc
 3. Run following code:
-</ol>
-<ol style="text-align: left;">
-</ol>
 
 {% highlight javascript %}
     (function(){
