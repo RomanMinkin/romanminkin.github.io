@@ -18,30 +18,29 @@ To keep networking level high I prefer to <b>Say hello </b>to everybody, but i'm
 3. Run following code:
 
 {% highlight javascript %}
-    (function(){
+(function(){
+    var i;
 
-        var i;
-
-        function tryToSayHello() {
-            var button = $('p.gtsy > a.D_submit').not('.g2cu')[0],
-                next   = $('a[rel=next]');
+    function tryToSayHello() {
+        var button = $('p.gtsy > a.D_submit').not('.g2cu')[0],
+            next   = $('a[rel=next]');
 
 
-            if (button) {
-                button.click();
-                console.log('click');
+        if (button) {
+            button.click();
+            console.log('click');
 
-            } else if (next) {
-                next.click();
+        } else if (next) {
+            next.click();
 
-            } else {
-                clearInterval(i);
-                console.log('Done!');
-            }
+        } else {
+            clearInterval(i);
+            console.log('Done!');
         }
+    }
 
-        i = setInterval(tryToSayHello, 300);
-    })()
+    i = setInterval(tryToSayHello, 300);
+})()
 {% endhighlight %}
 
 Enjoy!
