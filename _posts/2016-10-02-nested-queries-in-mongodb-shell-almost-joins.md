@@ -26,19 +26,19 @@ Assume we have two collections `users`
  and `posts`
 
 {% highlight javascript %}
-> db.posts.insert({_id: "pst-1", body: "body 1", tags: ["apples", "oranges"], user_id: "usr-1"})
-> db.posts.insert({_id: "pst-2", body: "body 2", tags: ["apples"], user_id: "usr-1"})
-> db.posts.insert({_id: "pst-3", body: "body 3", tags: ["oranges"], user_id: "usr-2"})
-> db.posts.insert({_id: "pst-4", body: "body 4", tags: [], user_id: "usr-1"})
-> db.posts.insert({_id: "pst-5", body: "body 5", tags: ["apples"], user_id: "usr-3"})
+> db.posts.insert({_id: "pst-1", user_id: "usr-1", body: "body 1", tags: ["apples", "oranges"]})
+> db.posts.insert({_id: "pst-2", user_id: "usr-1", body: "body 2", tags: ["apples"]})
+> db.posts.insert({_id: "pst-3", user_id: "usr-2", body: "body 3", tags: ["oranges"]})
+> db.posts.insert({_id: "pst-4", user_id: "usr-1", body: "body 4", tags: []})
+> db.posts.insert({_id: "pst-5", user_id: "usr-3", body: "body 5", tags: ["apples"]})
 
 > db.posts.find()
 
-{ "_id" : "pst-1", "body" : "body 1", "tags" : [ "apples", "oranges" ], "user_id" : "usr-1" }
-{ "_id" : "pst-2", "body" : "body 2", "tags" : [ "apples" ], "user_id" : "usr-1" }
-{ "_id" : "pst-3", "body" : "body 3", "tags" : [ "oranges" ], "user_id" : "usr-2" }
-{ "_id" : "pst-4", "body" : "body 4", "tags" : [ ], "user_id" : "usr-1" }
-{ "_id" : "pst-5", "body" : "body 5", "tags" : [ "apples" ], "user_id" : "usr-3" }
+{ "_id" : "pst-1", "user_id" : "usr-1", "body" : "body 1", "tags" : [ "apples", "oranges" ] }
+{ "_id" : "pst-2", "user_id" : "usr-1", "body" : "body 2", "tags" : [ "apples" ] }
+{ "_id" : "pst-3", "user_id" : "usr-2", "body" : "body 3", "tags" : [ "oranges" ] }
+{ "_id" : "pst-4", "user_id" : "usr-1", "body" : "body 4", "tags" : [ ] }
+{ "_id" : "pst-5", "user_id" : "usr-3", "body" : "body 5", "tags" : [ "apples" ] }
 {% endhighlight %}
 
 ...and let's say we need to find all the users who has at least one post tagged with **oranges**.
