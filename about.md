@@ -12,7 +12,7 @@ permalink: /about/
 
 I'm a Software Development Teams Lead and Enthusiast, who is passionate about all kind of technologies.
 
-I supose to launch rockets 🚀 into the space, but found my passion in web technilogies and now helping startups to launch their products.
+I suposed to launch rockets 🚀 into the space, but found my passion in web technilogies and now helping startups to launch their products.
 
 I help building anything from simple prototypes to full scale production ready stacks based on your needs and avalible resources, to get your product out fast 📲.
 
