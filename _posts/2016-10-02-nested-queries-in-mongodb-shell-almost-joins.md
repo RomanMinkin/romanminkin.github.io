@@ -53,16 +53,16 @@ db.users.find({_id: {$in: db.posts.find({tags: {$in: ["oranges"]}}).map(function
 {% endhighlight %}
 
 Let's break it down:
-- First part is just a standard finding users with `_id` matching values `$in` a given array `db.users.find({_id: {$in:...})`
-- Second part is a sub query which uses JavaScript [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) function on the query
+* First part is just a standard finding users with `_id` matching values `$in` a given array `db.users.find({_id: {$in:...})`
+* Second part is a sub query which uses JavaScript [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) function on the query
 [cursor](https://docs.mongodb.com/manual/tutorial/iterate-a-cursor/) and maps results into array of users' `_id`
 (as we know mongodb query does not return an array of objects, but [cursor](https://docs.mongodb.com/manual/tutorial/iterate-a-cursor/))
-- Inside the `map()` functions we specify a callback functions and what field we want to return from every post object. If we run just the second query we would get an array of users' `_id`
+* Inside the `map()` functions we specify a callback functions and what field we want to return from every post object. If we run just the second query we would get an array of users' `_id`
 {% highlight javascript %}
 > db.posts.find({tags: {$in: ["oranges"]}}).map(function(post){ return post.user_id })
 [ "usr-1", "usr-2" ]
 {% endhighlight %}
-- So basically under the hood our original query becomes this
+* So basically under the hood our original query becomes this
 {% highlight javascript %}
 > db.users.find({_id: {$in: [ "usr-1", "usr-2" ]}})
 {% endhighlight %}
