@@ -42,7 +42,7 @@ Assume we have two collections `users`
 { "_id" : "pst-5", "user_id" : "usr-3", "body" : "body 5", "tags" : [ "apples" ] }
 {% endhighlight %}
 
-...and let's say we need to find all the users who has at least one post tagged with **oranges**.
+...and let's say we need to find all the users who have at least one post tagged with **oranges**.
 
 There are quite a few options to do it in half manual way or with MongoDB v3.2 and new
 [$lookup](https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/) operator from aggregation framework,
