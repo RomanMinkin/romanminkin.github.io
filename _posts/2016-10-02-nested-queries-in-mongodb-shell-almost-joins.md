@@ -75,11 +75,11 @@ Let's break it down:
 > db.users.find({_id: {$in: [ "usr-1", "usr-2" ]}})
 {% endhighlight %}
 
-Another trick is if we have a case when second query users `.FindOne()` which returns a singular object instead of [cursor](https://docs.mongodb.com/manual/tutorial/iterate-a-cursor/), we do not need to user `map()` function and out query becomes a bit simpler
+Another trick is if we have a case when second query users `.FindOne()` which returns a singular object instead of [cursor](https://docs.mongodb.com/manual/tutorial/iterate-a-cursor/), we do not need to use `map()` function and our query becomes a bit simpler
 {% highlight javascript %}
 > db.users.find({_id: db.posts.findOne({_id: "pst-5"}).user_id})
 
 { "_id" : "usr-3", "name" : "Kate" }
 {% endhighlight %}
 
-Hope you enjoy! And keep hacking!
+Hope you enjoyed it! And keep hacking!
