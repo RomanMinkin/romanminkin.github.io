@@ -3,6 +3,7 @@ layout:     post
 title:      Nested queries in MongoDB shell (almost joins)
 date:       2016-10-02 20:57:26
 summary:    Simple way to query/cross match data across multiple collections.
+image:      /images/mongodb.png
 categories: blog
 tags:       mongodb
 ---
