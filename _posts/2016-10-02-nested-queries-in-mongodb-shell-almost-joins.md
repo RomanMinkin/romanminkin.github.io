@@ -15,6 +15,7 @@ Assume we have two collections `users`
 > db.users.insert({_id: "usr-1", name: "Tom"})
 > db.users.insert({_id: "usr-2", name: "John"})
 > db.users.insert({_id: "usr-3", name: "Kate"})
+
 > db.users.find()
 
 { "_id" : "usr-1", "name" : "Tom" }
@@ -30,6 +31,7 @@ Assume we have two collections `users`
 > db.posts.insert({_id: "pst-3", body: "body 3", tags: ["oranges"], user_id: "usr-2"})
 > db.posts.insert({_id: "pst-4", body: "body 4", tags: [], user_id: "usr-1"})
 > db.posts.insert({_id: "pst-5", body: "body 5", tags: ["apples"], user_id: "usr-3"})
+
 > db.posts.find()
 
 { "_id" : "pst-1", "body" : "body 1", "tags" : [ "apples", "oranges" ], "user_id" : "usr-1" }
@@ -63,6 +65,7 @@ Let's break it down:
 * Inside the `map()` functions we specify a callback functions and what field we want to return from every post object. If we run just the second query we would get an array of users' `_id`
 {% highlight javascript %}
 > db.posts.find({tags: {$in: ["oranges"]}}).map(function(post){ return post.user_id })
+
 [ "usr-1", "usr-2" ]
 {% endhighlight %}
 
@@ -74,6 +77,7 @@ Let's break it down:
 Another trick is if we have a case when second query users `.FindOne()` which returns a singular object instead of [cursor](https://docs.mongodb.com/manual/tutorial/iterate-a-cursor/), we do not need to user `map()` function and out query becomes a bit simpler
 {% highlight javascript %}
 > db.users.find({_id: db.posts.findOne({_id: "pst-5"}).user_id})
+
 { "_id" : "usr-3", "name" : "Kate" }
 {% endhighlight %}
 
